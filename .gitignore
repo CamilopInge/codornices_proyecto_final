@@ -1,0 +1,23 @@
+# Configuracion local: contiene secretos
+.env
+.env.local
+
+# Datos en tiempo de ejecucion: base, evidencias y correos registrados
+data/
+
+# Dependencias
+node_modules/
+
+# Respaldo del codigo anterior al refactor (local, no se versiona)
+.archivo-pre-refactor/
+
+# Registros y temporales
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp

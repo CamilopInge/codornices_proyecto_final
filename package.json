@@ -1,0 +1,35 @@
+{
+  "name": "evalcodorniz-ica",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sistema de evaluacion de bienestar animal en codornices de postura segun la metodologia ICA. Arquitectura en capas: API HTTP, backend de dominio y frontend.",
+  "engines": {
+    "node": "^22.14.0 || >=24.0.0"
+  },
+  "scripts": {
+    "start": "node api/server.js",
+    "dev": "node --watch api/server.js",
+    "migrar": "node scripts/migrar.js",
+    "seed": "node scripts/seed.js",
+    "truncate": "node scripts/truncate.js",
+    "backup": "node scripts/backup.js",
+    "probar-correo": "node scripts/probar-correo.js",
+    "probar-asistente": "node scripts/probar-asistente.js",
+    "check": "node --check api/server.js && node scripts/verificar-sintaxis.js",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.3.1"
+  },
+  "optionalDependencies": {
+    "openai": "^7.53.0"
+  }
+}

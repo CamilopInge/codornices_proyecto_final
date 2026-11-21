@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es" data-tema="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Sistema de evaluacion de bienestar animal en codornices de postura segun la metodologia ICA.">
+<meta name="color-scheme" content="light dark">
+<title>EvalCodorniz · Bienestar animal ICA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/componentes.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/vistas.css">
+<link rel="stylesheet" href="/assets/css/asistente.css">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%A5%9A</text></svg>">
+</head>
+<body>
+
+<a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+<div id="app" aria-busy="true">
+  <div class="cargando-inicial" role="status">
+    <span class="girador" aria-hidden="true"></span>
+    <p>Cargando EvalCodorniz...</p>
+  </div>
+</div>
+
+<!-- Los avisos se anuncian a lectores de pantalla sin robar el foco. -->
+<div id="avisos" class="avisos" role="status" aria-live="polite" aria-atomic="false"></div>
+
+<div id="modal" class="modal" hidden></div>
+
+<script type="module" src="/assets/js/main.js"></script>
+
+<noscript>
+  <div style="padding:2rem;max-width:40rem;margin:0 auto;font-family:system-ui">
+    <h1>Se requiere JavaScript</h1>
+    <p>EvalCodorniz necesita JavaScript habilitado para funcionar. Activelo en su navegador y recargue la pagina.</p>
+  </div>
+</noscript>
+
+</body>
+</html>

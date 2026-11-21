@@ -1,0 +1,621 @@
+{
+  "predio": {
+    "codigoIca": "QA-EVAL-ICA-001",
+    "nombre": "Granja Simulada ICA",
+    "municipio": "Tunja",
+    "departamento": "Boyacá",
+    "direccion": "Vereda QA"
+  },
+  "fechaVisita": "2026-11-06",
+  "sistema": "jaula",
+  "inventario": {
+    "dia": 0,
+    "levante": 300,
+    "produccion": 1200
+  },
+  "muestra": {
+    "semilla": "QA-ICA-2026-11-06-A7F3",
+    "corralesGalpones": [
+      "Galpón 1",
+      "Galpón 2"
+    ],
+    "puntos": [
+      "Punto 1",
+      "Punto 2",
+      "Punto 3",
+      "Punto 4",
+      "Punto 5",
+      "Punto 6",
+      "Punto 7",
+      "Punto 8",
+      "Punto 9"
+    ],
+    "aves": [
+      "Ave-001",
+      "Ave-002",
+      "Ave-003",
+      "Ave-004",
+      "Ave-005",
+      "Ave-006",
+      "Ave-007",
+      "Ave-008",
+      "Ave-009",
+      "Ave-010",
+      "Ave-011",
+      "Ave-012",
+      "Ave-013",
+      "Ave-014",
+      "Ave-015",
+      "Ave-016",
+      "Ave-017",
+      "Ave-018",
+      "Ave-019",
+      "Ave-020",
+      "Ave-021",
+      "Ave-022",
+      "Ave-023",
+      "Ave-024",
+      "Ave-025",
+      "Ave-026",
+      "Ave-027",
+      "Ave-028",
+      "Ave-029",
+      "Ave-030",
+      "Ave-031",
+      "Ave-032",
+      "Ave-033",
+      "Ave-034",
+      "Ave-035",
+      "Ave-036",
+      "Ave-037",
+      "Ave-038",
+      "Ave-039",
+      "Ave-040",
+      "Ave-041",
+      "Ave-042",
+      "Ave-043",
+      "Ave-044",
+      "Ave-045",
+      "Ave-046",
+      "Ave-047",
+      "Ave-048",
+      "Ave-049",
+      "Ave-050",
+      "Ave-051",
+      "Ave-052",
+      "Ave-053",
+      "Ave-054",
+      "Ave-055",
+      "Ave-056",
+      "Ave-057",
+      "Ave-058",
+      "Ave-059",
+      "Ave-060",
+      "Ave-061",
+      "Ave-062",
+      "Ave-063",
+      "Ave-064",
+      "Ave-065",
+      "Ave-066",
+      "Ave-067",
+      "Ave-068",
+      "Ave-069",
+      "Ave-070",
+      "Ave-071",
+      "Ave-072",
+      "Ave-073",
+      "Ave-074",
+      "Ave-075",
+      "Ave-076",
+      "Ave-077",
+      "Ave-078",
+      "Ave-079",
+      "Ave-080",
+      "Ave-081",
+      "Ave-082",
+      "Ave-083",
+      "Ave-084",
+      "Ave-085",
+      "Ave-086",
+      "Ave-087",
+      "Ave-088",
+      "Ave-089",
+      "Ave-090"
+    ],
+    "avesPorPunto": 10,
+    "edadPriorizada": true,
+    "bioseguridadVerificada": true,
+    "inspeccionNeutral": true,
+    "fase": "inspeccion"
+  },
+  "respuestas": [
+    {
+      "codigo": "MBR1",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR2",
+      "puntaje": 0,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR3",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR4",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR5",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR6",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR7",
+      "puntaje": 55,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR8",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBR8.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR9",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR10",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR11",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR12",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR13",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBR13.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBR14",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBR14.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA1",
+      "puntaje": 55,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA2",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA3",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA4",
+      "puntaje": 0,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA5",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA6",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA7",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA8",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA9",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA10",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBA10.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBA11",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG1",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG1.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG2",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG2.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG3",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG3.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG4",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG4.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG5",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG5.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG6",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG6.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG7",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG7.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG8",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG8.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG9",
+      "puntaje": 100,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG9.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    },
+    {
+      "codigo": "MBG10",
+      "puntaje": 55,
+      "observacion": "Registro simulado QA ICA; revisar evidencia en visita.",
+      "evidencias": [
+        "qa_MBG10.pdf"
+      ],
+      "metadatos": {
+        "legible": true,
+        "firmado": true,
+        "vigente": true,
+        "matriculaProfesional": "QA-PENDIENTE",
+        "estadoValidacion": "pendiente_verificacion_oficial"
+      }
+    }
+  ],
+  "resultado": {
+    "calificacionEsperada": "calculada_por_aplicacion",
+    "observacion": "Registro simulado para validar persistencia, evidencias, auditoria e IA."
+  },
+  "estado": "cerrada"
+}

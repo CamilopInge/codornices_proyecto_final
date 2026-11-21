@@ -1,0 +1,296 @@
+/**
+ * Estilos propios de vistas concretas: diligenciamiento de la evaluacion,
+ * forma oficial y tarjetas de indicador.
+ */
+
+/* --- Diligenciamiento: formulario + panel de puntaje fijo --- */
+
+.rejilla-evaluacion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: var(--e-5);
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .rejilla-evaluacion { grid-template-columns: minmax(0, 1fr); }
+  .panel-puntaje { position: static !important; }
+}
+
+.panel-puntaje {
+  position: sticky;
+  top: var(--e-4);
+  display: grid;
+  gap: var(--e-4);
+}
+
+.puntaje-grande {
+  font-size: var(--t-3xl);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.escala-niveles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  font-size: var(--t-xs);
+  text-align: center;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+}
+.escala-niveles span {
+  padding: 0.3rem 0.2rem;
+  background: var(--c-hundido);
+  color: var(--c-tinta-suave);
+}
+.escala-niveles span[data-activo="true"] {
+  background: var(--c-marca);
+  color: var(--c-marca-texto);
+  font-weight: 700;
+}
+
+.linea-grupo {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr auto;
+  gap: var(--e-2);
+  align-items: center;
+  font-size: var(--t-xs);
+}
+.linea-grupo__pista {
+  height: 6px;
+  border-radius: var(--r-full);
+  background: var(--c-hundido);
+  overflow: hidden;
+}
+.linea-grupo__relleno { height: 100%; background: var(--c-marca); transition: width var(--tr-normal); }
+
+.plan-muestreo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  border: 1px solid var(--c-linea);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+}
+.plan-muestreo > div { padding: var(--e-3) var(--e-1); display: grid; gap: 0.1rem; }
+.plan-muestreo > div + div { border-left: 1px solid var(--c-linea); }
+.plan-muestreo b { font-size: var(--t-lg); font-variant-numeric: tabular-nums; }
+.plan-muestreo span { font-size: var(--t-xs); color: var(--c-tinta-suave); }
+
+/* --- Tarjeta de indicador --- */
+
+.indicador {
+  display: grid;
+  gap: var(--e-4);
+  padding: var(--e-5);
+  background: var(--c-superficie);
+  border: 1px solid var(--c-linea);
+  border-left: 4px solid var(--c-linea-fuerte);
+  border-radius: var(--r-md);
+  min-width: 0;
+  scroll-margin-top: var(--e-6);
+  transition: border-color var(--tr-normal), box-shadow var(--tr-normal);
+}
+
+.indicador:focus-within { box-shadow: var(--s-2); }
+.indicador[data-puntaje="100"] { border-left-color: var(--c-ok); }
+.indicador[data-puntaje="55"],
+.indicador[data-puntaje="50"] { border-left-color: var(--c-alerta); }
+.indicador[data-puntaje="0"] { border-left-color: var(--c-error); }
+
+.indicador__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--e-3);
+  flex-wrap: wrap;
+}
+
+.indicador__titulo { display: grid; gap: var(--e-1); }
+.indicador__pregunta { font-weight: 600; }
+.indicador__metodo { font-size: var(--t-xs); color: var(--c-tinta-suave); }
+
+.indicador__nota-norma {
+  padding: var(--e-2) var(--e-3);
+  border-radius: var(--r-sm);
+  background: var(--c-alerta-fondo);
+  color: var(--c-alerta);
+  font-size: var(--t-xs);
+  line-height: 1.5;
+}
+
+/* --- Escala de niveles seleccionable --- */
+
+.niveles { display: grid; gap: var(--e-2); }
+
+.nivel {
+  display: grid;
+  grid-template-columns: auto 2.8rem 1fr;
+  gap: var(--e-3);
+  align-items: start;
+  padding: var(--e-3);
+  border: 1px solid var(--c-linea);
+  border-radius: var(--r-sm);
+  font-size: var(--t-sm);
+  font-weight: 400;
+  color: var(--c-tinta);
+  cursor: pointer;
+  width: 100%;
+  transition: background var(--tr-rapida), border-color var(--tr-rapida);
+}
+
+.nivel:hover { border-color: var(--c-marca); background: var(--c-superficie-2); }
+.nivel:has(input:checked) { background: var(--c-marca-suave); border-color: var(--c-marca); }
+.nivel:has(input:disabled) { cursor: not-allowed; opacity: 0.7; }
+
+.nivel > input { margin-top: 0.2rem; }
+.nivel__puntos {
+  font-family: var(--f-mono);
+  font-weight: 600;
+  font-size: var(--t-sm);
+  color: var(--c-tinta-suave);
+}
+.nivel:has(input:checked) .nivel__puntos { color: var(--c-marca); }
+
+/* Nivel calculado automaticamente: no es seleccionable. */
+.nivel--calculado { cursor: default; grid-template-columns: 2.8rem 1fr; }
+.nivel--calculado:hover { border-color: var(--c-linea); background: transparent; }
+.nivel--calculado[data-activo="true"] { background: var(--c-marca-suave); border-color: var(--c-marca); }
+
+/* --- Campos de calculo --- */
+
+.campos-calculo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: var(--e-3);
+  align-items: end;
+  padding: var(--e-4);
+  background: var(--c-superficie-2);
+  border: 1px solid var(--c-linea);
+  border-radius: var(--r-sm);
+}
+
+.resultado-calculo {
+  grid-column: 1 / -1;
+  padding: var(--e-2) var(--e-3);
+  border-radius: var(--r-sm);
+  background: var(--c-hundido);
+  font-size: var(--t-sm);
+  font-weight: 600;
+}
+.resultado-calculo[data-estado="ok"] { background: var(--c-ok-fondo); color: var(--c-ok); }
+.resultado-calculo[data-estado="alerta"] { background: var(--c-alerta-fondo); color: var(--c-alerta); }
+.resultado-calculo[data-estado="error"] { background: var(--c-error-fondo); color: var(--c-error); }
+
+/* --- Bloque documental --- */
+
+.bloque-documento {
+  display: grid;
+  gap: var(--e-3);
+  padding: var(--e-4);
+  border: 1px dashed var(--c-linea-fuerte);
+  border-radius: var(--r-sm);
+  background: var(--c-superficie-2);
+}
+
+.bloque-documento__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
+  gap: var(--e-3);
+}
+
+.evidencia-actual {
+  display: flex;
+  align-items: center;
+  gap: var(--e-2);
+  flex-wrap: wrap;
+  font-size: var(--t-sm);
+}
+
+/* --- Forma oficial --- */
+
+.forma-oficial { display: grid; gap: var(--e-5); }
+
+.forma-oficial__encabezado {
+  display: grid;
+  gap: var(--e-2);
+  padding-bottom: var(--e-4);
+  border-bottom: 2px solid var(--c-marca);
+}
+
+.tarjeta-recomendacion {
+  display: grid;
+  gap: var(--e-3);
+  padding: var(--e-4);
+  border: 1px solid var(--c-linea);
+  border-radius: var(--r-md);
+  background: var(--c-superficie);
+}
+.tarjeta-recomendacion[data-estado="descartada"] { opacity: 0.55; }
+.tarjeta-recomendacion[data-estado="aprobada"] { border-left: 3px solid var(--c-ok); }
+
+/* --- Evolucion historica (grafico de lineas en SVG) --- */
+
+.grafico-evolucion { width: 100%; height: auto; overflow: visible; }
+.grafico-evolucion .eje { stroke: var(--c-linea); stroke-width: 1; }
+.grafico-evolucion .cuadricula { stroke: var(--c-linea); stroke-width: 1; stroke-dasharray: 2 4; opacity: 0.6; }
+.grafico-evolucion .serie { fill: none; stroke: var(--c-marca); stroke-width: 2; stroke-linejoin: round; }
+.grafico-evolucion .punto-serie { fill: var(--c-marca); stroke: var(--c-superficie); stroke-width: 2; }
+.grafico-evolucion .etiqueta { fill: var(--c-tinta-suave); font-size: 11px; font-family: var(--f-texto); }
+
+/* --- Filtros --- */
+
+.barra-filtros {
+  display: grid;
+  gap: var(--e-3);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  align-items: end;
+}
+
+.filtros-activos { display: flex; gap: var(--e-2); flex-wrap: wrap; align-items: center; }
+
+.ficha-filtro {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e-2);
+  padding: 0.2rem 0.3rem 0.2rem 0.65rem;
+  border-radius: var(--r-full);
+  background: var(--c-marca-suave);
+  color: var(--c-marca);
+  font-size: var(--t-xs);
+  font-weight: 600;
+}
+.ficha-filtro button {
+  display: grid;
+  place-items: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  line-height: 1;
+}
+.ficha-filtro button:hover { background: rgba(0, 0, 0, 0.1); }
+
+/* --- Paginacion --- */
+
+.paginacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e-3);
+  flex-wrap: wrap;
+  font-size: var(--t-sm);
+  color: var(--c-tinta-suave);
+}
+.paginacion__controles { display: flex; gap: var(--e-2); align-items: center; }
+
+/* --- Matriz de permisos --- */
+
+.matriz-permisos td { text-align: center; }
+.matriz-permisos td:first-child { text-align: left; font-weight: 600; }
